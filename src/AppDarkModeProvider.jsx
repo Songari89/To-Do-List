@@ -1,5 +1,18 @@
-import React, { Children } from "react";
+import React, { children, createContext, useState } from "react";
+
+export const DarkModeContext = createContext();
 
 export default function AppDarkModeProvider({ children }) {
-  return <div className="appdarkmodeprovider">{children}</div>;
+  const [darkMode, setDarkMode] = useState(false);
+  const toggleDarkMode = () => {
+    setDarkMode((mode) => !mode);
+  };
+  return (
+    <DarkModeContext.Provider
+      value={{ darkMode, toggleDarkMode }}
+      className="appdarkmodeprovider"
+    >
+      {children}
+    </DarkModeContext.Provider>
+  );
 }
