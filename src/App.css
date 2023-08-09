@@ -56,3 +56,22 @@ html {
   top: 25px;
   left: 25px;
 }
+.formcontainer {
+  width: 228px;
+  display: flex;
+}
+.formcontainer>input{
+  width: 200px;
+  height: 28px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.formcontainer>button {
+  width: 28px;
+  height: 28px;
+  border: none;
+    border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #986843;
+}
