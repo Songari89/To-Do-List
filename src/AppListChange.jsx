@@ -7,8 +7,8 @@ export default function AppListChange({ children }) {
   const [achieveList, setAchieveList] = useState(true);
   const [doneList, setDoneList] = useState(false);
   const showAllList = () => {
-    setAllList((mode) => !mode);
-    setAchieveList((mode) => !mode);
+    setAllList(true);
+    setAchieveList(false);
     setDoneList(false);
   };
   const showAchieveList = () => {
@@ -17,8 +17,8 @@ export default function AppListChange({ children }) {
     setDoneList(false);
   };
   const showDoneList = () => {
-    setDoneList((mode) => !mode);
-    setAchieveList((mode) => !mode);
+    setDoneList(true);
+    setAchieveList(false);
     setAllList(false);
   };
   return (

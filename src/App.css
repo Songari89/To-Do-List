@@ -75,3 +75,33 @@ html {
   border-bottom-right-radius: 5px;
   background-color: #986843;
 }
+.showmode {
+  width: 300px;
+  height: 230px;
+  display: none;
+  background-color: #986843;
+}
+.showachieve {
+  display: block;
+}
+.showall {
+  display: block;
+}
+.shoedone {
+  display: block;
+}
+.listbtn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  
+}
+.listbtn>button {
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}

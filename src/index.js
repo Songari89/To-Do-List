@@ -7,16 +7,18 @@ import App from "./App";
 import Header from "./Header";
 import List from "./List";
 import Footer from "./Footer";
-
+import AppListChange from "./AppListChange";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App>
       <AppDarkModeProvider>
-        <Header />
-        <List />
-        <Footer />
+        <AppListChange>
+          <Header />
+          <List />
+          <Footer />
+        </AppListChange>
       </AppDarkModeProvider>
     </App>
   </React.StrictMode>
